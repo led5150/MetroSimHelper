@@ -1,28 +1,34 @@
-# genRandCommandFile
+# metroSimHelper
 /*****************************************************************************
-* MetroSim Helper! 
+* MetroSim Helper
 * Comp 15
-* README for genRandCommandFile.cpp
-*
-* A fun program that allows you to create test command files for use with your MetroSim implementation
+* README for metroSimHelper.cpp
+
+* A fun program that allows you to create test command files for use with your 
+ MetroSim implementation
 
 *****************************************************************************/
 
 Compile/run:
-     - Compile using:
+     
+Compile using the provided Makefile by simply typing:
 
-clang++ -Wall -Wextra -std=c++11 -o genRandCommandFile genRandCommandFile.cpp
+    make
+
+Or use a custom compilation command:
+
+    clang++ -Wall -Wextra -std=c++11 -o metroSimHelper metroSimHelper.cpp
     
-Or use any excecutable name you like!  I realize genRandCommandFile is 
+Choose any excecutable name you like!  I realize metroSimHelper is 
 long and annoying to type!  Make it your own.
 
 run executable with:
 
-    ./genRandCommandFile fileToBeCreated numberOfPassengersToBeCreated
+    ./metroSimHelper fileToBeCreated numberOfPassengersToBeCreated
 
 for example:
 
-    ./genRandCommandFile rand_command1.txt 100
+    ./metroSimHelper rand_command1.txt 100
 
 will create a file called rand_command.txt with 100 random passengers
 commands in it.
@@ -89,7 +95,7 @@ You have the option of running in what I like to call Move Metro Only Mode!
 To do so, run the program with '0' or a negative number of passengers in
 the command line like so:
 
-    ./genRandCommandFile rand_command1.txt 0
+    ./metroSimHelper rand_command1.txt 0
 
 You will be prompted to ask if you want to run in Move Metro Mode or if this
 was a mistake and you'd like to quit.
@@ -109,7 +115,7 @@ https://stackoverflow.com/questions/2797813/how-to-convert-a-command-line-argume
 
 Files: 
 
-genRandCommandFile.cpp
+metroSimHelper.cpp
 
 Data Structures:
 
