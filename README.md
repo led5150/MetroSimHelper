@@ -4,8 +4,8 @@
 * Comp 15
 * README for genRandCommandFile.cpp
 *
-* A fun program that allows you to create test command files for use with
-* your MetroSim implementation
+* A fun program that allows you to create test command files for use with your MetroSim implementation
+
 *****************************************************************************/
 
 Compile/run:
