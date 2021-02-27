@@ -18,7 +18,7 @@ long and annoying to type!  Make it your own.
 
   - run executable with:
     
-    ./genRandCommandFile fileToBeCreated numberOfPassengersToBeCreated
+      ./genRandCommandFile fileToBeCreated numberOfPassengersToBeCreated
 
 for example:
 
