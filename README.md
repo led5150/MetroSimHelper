@@ -13,19 +13,19 @@ Compile/run:
 
 clang++ -Wall -Wextra -std=c++11 -o genRandCommandFile genRandCommandFile.cpp
     
-    Or use any excecutable name you like!  I realize genRandCommandFile is 
-    long and annoying to type!  Make it your own.
+Or use any excecutable name you like!  I realize genRandCommandFile is 
+long and annoying to type!  Make it your own.
 
-     - run executable with:
-        
+  - run executable with:
+    
     ./genRandCommandFile fileToBeCreated numberOfPassengersToBeCreated
 
-    for example:
+for example:
 
     ./genRandCommandFile rand_command1.txt 100
 
-    will create a file called rand_command.txt with 100 random passengers
-    commands in it.
+will create a file called rand_command.txt with 100 random passengers
+commands in it.
 
 
 Program Purpose:
@@ -52,32 +52,32 @@ There are three constant variables of great importance in the .cpp file!!
 
 The first is: 'const int NUMSTATIONS' 
 
-    - By default this is set to '26', which is the number of stations provided
-      in the stations.txt file we were given.  You MUST update this to reflect
-      the exact number of stations you have in whatever file you are using as
-      station input.  Otherwise, you may experience passengers who are trying
-      to board at stations that don't exist!  Poor guys... worse than that
-      your program may seg fault, have memory leaks, or just generally 
-      display "undocumented behavior".  Please exercise caution! 
+  - By default this is set to '26', which is the number of stations provided
+    in the stations.txt file we were given.  You MUST update this to reflect
+    the exact number of stations you have in whatever file you are using as
+    station input.  Otherwise, you may experience passengers who are trying
+    to board at stations that don't exist!  Poor guys... worse than that
+    your program may seg fault, have memory leaks, or just generally 
+    display "undocumented behavior".  Please exercise caution! 
 
 The second is: 'const bool USEFFILENAME'
 
-      NOTE: This feature was for use with Comp15 2019 Fall version of the 
-      assignment. Spring 2021 users can ignore this, and leave this boolean
-      set to 'false'!
+  NOTE: This feature was for use with Comp15 2019 Fall version of the 
+  assignment. Spring 2021 users can ignore this, and leave this boolean
+  set to 'false'!
 
-    - By default this is set to false.  If this is true, the "f [filename]" 
-      command will be printed into the command file.  It's position has been
-      optimized to ensure that you have a close to even distribution between
-      the two output files, to ensure that you are in fact printing to both
-      files.  If this is set to false, then the "f [filename]" command will
-      never be printed to the file.
+- By default this is set to false.  If this is true, the "f [filename]" 
+  command will be printed into the command file.  It's position has been
+  optimized to ensure that you have a close to even distribution between
+  the two output files, to ensure that you are in fact printing to both
+  files.  If this is set to false, then the "f [filename]" command will
+  never be printed to the file.
 
 The third is: 'const string NEWFILE'
 
-    - By default this is set to "outB.txt".  If USEFFILENAME is true then the
-      new output file your program will output to will be named outB.txt.  
-      If outB.txt does not exist, don't worry! It will be created for you.
+  - By default this is set to "outB.txt".  If USEFFILENAME is true then the
+    new output file your program will output to will be named outB.txt.  
+    If outB.txt does not exist, don't worry! It will be created for you.
 
 Obviously, if you change any of these variables, save, and recompile and
 glorious, effort free command file creation shall be your reward!
@@ -89,7 +89,7 @@ You have the option of running in what I like to call Move Metro Only Mode!
 To do so, run the program with '0' or a negative number of passengers in
 the command line like so:
 
-./genRandCommandFile rand_command1.txt 0
+    ./genRandCommandFile rand_command1.txt 0
 
 You will be prompted to ask if you want to run in Move Metro Mode or if this
 was a mistake and you'd like to quit.
