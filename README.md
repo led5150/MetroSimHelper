@@ -16,8 +16,8 @@ clang++ -Wall -Wextra -std=c++11 -o genRandCommandFile genRandCommandFile.cpp
 Or use any excecutable name you like!  I realize genRandCommandFile is 
 long and annoying to type!  Make it your own.
 
-- run executable with:
-    
+run executable with:
+
     ./genRandCommandFile fileToBeCreated numberOfPassengersToBeCreated
 
 for example:
